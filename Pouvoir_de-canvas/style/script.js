@@ -10,7 +10,7 @@ function domloaded(){
     c.width = c.offsetWidth;
     c.height = c.offsetHeight;
     console.log(c.width,c.height)
-    window.taille=c.width/largeur;
+    window.taille=parseInt(c.width/largeur);
 }
 function doit(){
     ctx.moveTo(0, 0);
@@ -31,6 +31,7 @@ function getMousePos(canvas, evt) {
   }
 
 function draw(e){
+
     let a=[]
     for (let i = 0; i < largeur; i++) {
         let b=[]
