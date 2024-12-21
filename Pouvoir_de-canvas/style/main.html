@@ -8,8 +8,18 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <canvas id="myCanvas" onmousemove="draw(event)"></canvas>
-    <button onclick="doit()"></button>
-    <button onclick="doit1()"></button>
+    <div class="header"></div>
+    <div class="game">
+        <div class="container">
+            <canvas id="myCanvas" onmousemove="draw(event)"></canvas>
+        </div>
+        <div class="score">
+            <p>Score: <span id="score">0</span></p>
+            <button onclick="doit()"></button>
+            <button onclick="doit1()"></button>
+        </div>
+    </div>
+    <div class="foot">
+    </div>
 </body>
 </html>
